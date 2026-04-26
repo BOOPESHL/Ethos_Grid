@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EthosGrid</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="logo">
+        <span class="highlight">E</span>thos<span class="highlight">G</span>rid
+    </h1>
+    <form class="form">
+        <div class="halls">
+            <label for="numHalls">Number of Halls</label>
+            <input id="numHalls" class="num_inp" type="number" min="0">
+        </div>
+
+        <p>Capacity of each hall</p>
+        <div class="hall-det">
+            <div class="hall-row">
+                <label for="numRows">Number of rows in each hall</label>
+                <input id="numRows" class="num_inp" type="number" min="0">
+            </div>
+            <div class="hall-col">
+                <label for="numCols">Number of columns in each hall</label>
+                <input id="numCols" class="num_inp" type="number" min="0">
+            </div>
+        </div>
+
+        <p>Select Department</p>
+        <div class="check-boxes">
+            <div class="course">
+                <label for="chk-cse">CSE</label>
+                <input id="chk-cse" type="checkbox" value="cse">
+            </div>
+            <div class="course">
+                <label for="chk-ece">ECE</label>
+                <input id="chk-ece" type="checkbox" value="ece">
+            </div>
+            <div class="course">
+                <label for="chk-eee">EEE</label>
+                <input id="chk-eee" type="checkbox" value="eee">
+            </div>
+            <div class="course">
+                <label for="chk-mech">MECH</label>
+                <input id="chk-mech" type="checkbox" value="mech">
+            </div>
+            <div class="course">
+                <label for="chk-aero">AERO</label>
+                <input id="chk-aero" type="checkbox" value="aero">
+            </div>
+        </div>
+
+        <div class="regRanges"></div>
+
+        <button type="button">Confirm</button>
+    </form>
+    <div id="analytics"></div>
+    <div id="output"></div>
+</body>
+</html>
